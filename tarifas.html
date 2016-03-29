@@ -1,0 +1,168 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/common.css">
+  <script>
+        
+        $(document).ready(function() { 
+        	
+			$.ajax({
+				  url: 'valori.json',
+				  dataType: 'json',
+				  success: function(data) {
+                      
+                      $('#tar_1').html(data['tar_1']);
+    				$('#tar_2').html(data['tar_2']);
+					$('#tar_3').html(data['tar_3']);
+                    
+				  	$('#single_1').html(data['single_1']);
+					$('#single_2').html(data['single_2']);
+					$('#single_3').html(data['single_3']);
+
+					$('#doble_1').html(data['doble_1']);
+    				$('#doble_2').html(data['doble_2']);
+					$('#doble_3').html(data['doble_3']);
+                    $('#doble_4').html(data['doble_4']);
+                        
+                    
+                    $('#triple_1').html(data['triple_1']);
+    				$('#triple_2').html(data['triple_2']);
+					$('#triple_3').html(data['triple_3']);
+                    
+                    $('#quad_1').html(data['quad_1']);
+    				$('#quad_2').html(data['quad_2']);
+					$('#quad_3').html(data['quad_3']);
+				    
+                    
+                    $('#pension_1').html(data['pension_1']);
+        			$('#pension_2').html(data['pension_2']);
+					$('#pension_3').html(data['pension_3']);
+				
+                
+                
+				  }
+			});
+      });
+      
+  </script>
+  
+  <style>
+ body{
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        font-size:20px;
+        color:#C0B49E;
+    }
+  </style>
+  
+  
+</head><body>
+
+<div class="container">
+     <div class="row">
+        <div class="span8">
+            <img src="img/header_logo.jpg">
+        </div>
+            <div style="padding-top:120px;" class="span4">
+                <p style="text-align:right;"><a style="color:#C0B49E;" href="index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a style="color:#C0B49E;" href="tarifas.html">TARIFAS</a></p>
+            </div>
+    </div>
+    
+    <div class="row">
+        <div class="span12" style=" background-image: url(&quot;./img/tarifas-bg.jpg&quot;); width: 940px; height: 463px; background-repeat: no-repeat; background-size: 940px 463px;">
+        
+         <!--
+         <table style="width: 940px; height: 463px;color:white;font-size:16px;" border="0" width="100%">
+                    <tr>
+                         <td style="min-width: 320px;"></td>
+                         <td style="height: 5px; min-width: 222px;"> <span id="single_1"></span>  </td>
+                         <td style="height: 5px; min-width: 206px;"> <span id="single_2"></span>  </td>
+                         <td style="height:5px;  min-width: 320px;"> <span id="single_3"></span>   </td>
+                    </tr>
+                    
+                    </table>
+                    -->
+                    
+                    <table style="width: 940px; height: 463px;color:white;font-size:16px;" width="100%">
+                <tbody>
+                   <tr draggable="true" style="">
+                         <td style="max-height: 5px; font-size: 26px; height: 5px; padding-top: 0px;" colspan="4"><span style="padding-left: 4%; font-size: 36px;">tarifas:</span><span id="tar_1" style="padding-left: 10%;">16/sep - 15/dic</span>
+                         
+                         
+                        <span id="tar_2" style="padding-left: 3%;">16/dic - 1/ene</span><span draggable="true" id="tar_3" style="padding-left: 3%;"> 2/ene - 22/feb</span>
+                            
+                        </td>
+                       
+                    </tr>
+                    
+                     <tr>
+                         <td style="min-width: 320px;"></td>
+                         <td style="height: 5px; min-width: 222px;"> <span id="single_1">220</span>  </td>
+                         <td style="height: 5px; min-width: 206px;"> <span id="single_2"></span>  </td>
+                         <td style="height:5px;  min-width: 320px;"> <span id="single_3"></span>   </td>
+                    </tr>
+                    <tr>
+                         <td style="min-width: 320px; min-height: 25px;"></td>
+                         <td style="height: 10px; min-width: 222px;"> <span id="doble_1"></span>  </td>
+                         <td style="height: 10px; min-width: 206px;"> <span id="doble_2"></span>  </td>
+                         <td style="height:10px;  min-width: 320px;"> <span id="doble_3"></span><br><span id="doble_4"></span>  </td>
+                    </tr>
+                      <tr>
+                         <td style="height: 10px; min-width: 320px;"></td>
+                         <td style="height: 10px; min-width: 222px;"> <span id="triple_1"></span>  </td>
+                         <td style="height: 10px; min-width: 206px;"> <span id="triple_2"></span>  </td>
+                         <td style="height:10px;  min-width: 320px;"> <span id="triple_3"></span>   </td>
+                    </tr>
+                      <tr>
+                         <td style="height: 10px; min-width: 320px;"></td>
+                         <td style="height: 10px; min-width: 222px;"> <span id="quad_1"></span>  </td>
+                         <td style="height: 10px; min-width: 206px;"> <span id="quad_2"></span>  </td>
+                         <td style="height:10px;  min-width: 320px;"> <span id="quad_3"></span>   </td>
+                    </tr>
+                      <tr>
+                         <td style="height: 10px; min-width: 320px;"></td>
+                         <td style="height: 10px; min-width: 222px; padding-bottom: 25px;"> <span id="pension_1"></span>  </td>
+                         <td style="height: 10px; min-width: 206px; padding-bottom: 25px;"> <span id="pension_2"></span>  </td>
+                         <td style="height:10px;  min-width: 320px;padding-bottom: 25px;"> <span id="pension_3"></span>   </td>
+                    </tr>
+                    
+                    
+                    
+                    
+            </tbody></table>
+        </div>
+    </div>
+     <div class="row">
+        <div class="span12">
+             <img src="img/tarifas2.jpg">
+        </div>
+    </div>
+    
+     <div class="row">
+        <div class="span5">
+             <img src="img/img6-1.jpg">
+        </div>
+        <div style="padding-top:22px" id="map" class="span7">
+                <iframe src="http://maps.google.it/maps?f=q&amp;source=s_q&amp;hl=it&amp;q=Misionero+Mascardi+517,+San+Mart%C3%ADn+de+Los+Andes,+Neuqu%C3%A9n,+Argentina&amp;aq=&amp;sll=45.579445,9.9646&amp;sspn=2.141471,4.938354&amp;ie=UTF8&amp;geocode=FTtSm_0dqVO_-w&amp;split=0&amp;hq=&amp;hnear=Misionero+Mascardi+517,+San+Mart%C3%ADn+de+Los+Andes,+Neuqu%C3%A9n,+Argentina&amp;t=m&amp;view=map&amp;ll=-40.148373,-71.346588&amp;spn=0.014762,0.022917&amp;z=15&amp;iwloc=A&amp;output=embed" marginwidth="0" marginheight="0" frameborder="0" height="450" scrolling="no" width="535"></iframe>
+        </div>
+    </div>
+    
+    
+    
+    <div class="footer row">
+        <p style="text-align:center;padding-top:20px;margin-bottom:0px;">Misionero Mascardi 517 -San Martin de los Andes - Neuquén - Patagonia Argentina</p>
+        <p style="text-align:center;">(02972) 42-7592 - lìneas rotativas -  info@patagoniahotelturismo.com<br> </p>
+        <p style="text-align:center;"><a target="_blank" href="https://www.facebook.com/hotelturismopatagonia/">Página Facebook</a></p>
+    </div>
+    
+    
+</div>
+    
+    
+    
+
+    
+</body></html>
